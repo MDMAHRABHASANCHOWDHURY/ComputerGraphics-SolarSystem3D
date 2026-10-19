@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='utf-8'?>
+<CodeBlocks_project_file>
+  <FileVersion major="1" minor="6" />
+  <Project>
+    <Option title="SolarSystem3D" />
+    <Option pch_mode="2" />
+    <Option compiler="gcc" />
+    <Build>
+      <Target title="Debug">
+        <Option output="bin/Debug/SolarSystem3D" prefix_auto="1" extension_auto="1" />
+        <Option object_output="obj/Debug/" />
+        <Option type="1" />
+        <Option compiler="gcc" />
+        <Option execution_dir="." />
+        <Compiler>
+          <Add option="-g" />
+        </Compiler>
+      </Target>
+      <Target title="Release">
+        <Option output="bin/Release/SolarSystem3D" prefix_auto="1" extension_auto="1" />
+        <Option object_output="obj/Release/" />
+        <Option type="1" />
+        <Option compiler="gcc" />
+        <Option execution_dir="." />
+        <Compiler>
+          <Add option="-O2" />
+        </Compiler>
+      </Target>
+    </Build>
+    <Compiler>
+      <Add option="-Wall" />
+      <Add option="-std=c++11" />
+      <Add directory="$(#freeglut.include)" />
+    </Compiler>
+    <Linker>
+      <Add library="freeglut" />
+      <Add library="glu32" />
+      <Add library="opengl32" />
+      <Add directory="$(#freeglut.lib)" />
+    </Linker>
+    <Unit filename="main.cpp" />
+    <Unit filename="Graphics.cpp" />
+    <Unit filename="Moons.cpp" />
+    <Unit filename="SolarSystem.h">
+      <Option compile="0" link="0" />
+    </Unit>
+    <Unit filename="planets/Earth.cpp" />
+    <Unit filename="planets/Jupiter.cpp" />
+    <Unit filename="planets/Mars.cpp" />
+    <Unit filename="planets/Mercury.cpp" />
+    <Unit filename="planets/Neptune.cpp" />
+    <Unit filename="planets/Saturn.cpp" />
+    <Unit filename="planets/Uranus.cpp" />
+    <Unit filename="planets/Venus.cpp" />
+    <Unit filename="Sun.cpp" />
+    <Unit filename="README.md">
+      <Option compile="0" link="0" />
+    </Unit>
+    <Unit filename="Surface.cpp" />
+    <Extensions />
+  </Project>
+</CodeBlocks_project_file>
